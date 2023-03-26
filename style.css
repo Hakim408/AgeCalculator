@@ -1,0 +1,101 @@
+*{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: mediumspringgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    position: relative;
+    background: blue;
+    width: 768px;
+    backdrop-filter: blur(15px);
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 0px;
+}
+
+.box h4{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.box .date-picker{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.box .date-picker input{
+    margin: 0 10px;
+    border: 0px;
+    padding: .5rem;
+    border-radius: 10px;
+    transition: box-shadow 500ms ease;
+}
+
+.box .date-picker input:focus{
+    outline:rebeccapurple;
+    box-shadow: 0 0 15px grey;
+}
+
+.box .date-picker span{
+    display: inline;
+    text-transform: uppercase;
+
+}
+
+.box .date-picker span#choosedate{
+    margin-left: auto;
+}
+
+
+.age-cal{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.age-cal .box{
+    position: relative;
+    background: gainsboro;
+    border-radius: 10px;
+    margin: 10px;
+    width: 220px;
+    transition: 500ms ease;
+}
+
+.age-cal .box p.header{
+    position: relative;
+    text-align: center;
+    background: gray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.age-cal .box:nth-child(even) p.header{
+    background: salmon;
+}
+
+.age-cal .box .value{
+    text-align: center;
+    padding: 20px 30 px;
+    font-size: 3rem;
+    transition: 500ms ease;
+}
+
